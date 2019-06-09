@@ -1,7 +1,6 @@
 # 생활코딩 html : table
-
-
-
+<br>
+<br>
 ## 배운 코드
     <html>
     <body>
@@ -27,9 +26,8 @@
         </table>
     </body>
     </html>
-
-
-
+<br>
+<br>
 ## 결과
 <html>
 <body>
@@ -55,6 +53,5 @@
     </table>
 </body>
 </html>
-    
-    
+<br>
 - 추가 : 과거 레이아웃에는 table 태그가 사용되었음.
