@@ -1,6 +1,5 @@
-# 생활코딩 html : table
-<br>
-<br>
+# 생활코딩 html : table  
+
 ## 배운 코드
     <html>
     <body>
@@ -25,9 +24,8 @@
             </tfoot>
         </table>
     </body>
-    </html>
-<br>
-<br>
+    </html>  
+
 ## 결과
 <html>
 <body>
