@@ -1,6 +1,6 @@
 # [생활코딩] html : table
 
-'<html>
+'''<html>
 <body>
     <table border="1">
         <thead>
@@ -23,7 +23,7 @@
         </tfoot>
     </table>
 </body>
-</html>'
+</html>'''
 
     
 - 추가 : 과거 레이아웃에는 table 태그가 사용되었음.
