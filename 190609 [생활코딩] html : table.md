@@ -52,4 +52,7 @@
 </body>
 </html>
 
-- 추가 : 과거 레이아웃에는 table 태그가 사용되었음.
+> 추가 : 과거 레이아웃에는 table 태그가 사용되었음.
+
+Link: [내 블로그][my-blog]
+[my-blog]:https://pro-pennek.tistory.com/ "Pennek's blog"
