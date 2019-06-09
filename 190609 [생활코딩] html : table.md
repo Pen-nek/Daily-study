@@ -52,6 +52,6 @@
 </body>
 </html>
 
-> 추가 : 과거 레이아웃에는 table 태그가 사용되었음.
+> 추가 : 과거 레이아웃에는 table 태그가 사용되었음.  
 
-[내 블로그](https://pro-pennek.tistory.com/){: target="_blank" }
+[내 블로그](https://pro-pennek.tistory.com/)
