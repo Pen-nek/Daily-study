@@ -1,4 +1,4 @@
-# 생활코딩 html : table  
+# 생활코딩 html : table    
 
 ## 배운 코드
     <html>
@@ -24,7 +24,7 @@
             </tfoot>
         </table>
     </body>
-    </html>  
+    </html>    
 
 ## 결과
 <html>
