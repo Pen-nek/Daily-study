@@ -1,4 +1,4 @@
-# Daily-study  
+# Daily-study 목차
 
 ## HTML  
 > - [190609](190609.md)｜html 수업(생활코딩) : table  
