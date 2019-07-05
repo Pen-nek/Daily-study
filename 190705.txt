@@ -16,3 +16,10 @@ SELECT 속성이름
 FROM 테이블이름
 WHERE (조건식) OR (조건식)
 
+
+2. 새로 배운 내용
+
+1) 제약조건
+Primary key(기본키) = UNIQUE 속성에 NOT NULL이 추가된 것
+
+2) SQL lite는 경량 DB, 주로 핸드폰에 사용
