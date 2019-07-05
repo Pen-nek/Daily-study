@@ -1,0 +1,46 @@
+190704
+
+<여는 말>
+- 프로그래밍은 전체적인 틀을 아는 게 중요. 다 외울 필요X
+
+
+
+0. 동의어
+구문 = syntax
+기본키 = 주키 = primary key
+
+
+1. 서브쿼리
+- 서브쿼리가 메인쿼리보다 먼저 수행됨
+- 소괄호로 감싸야 함
+
+
+2. 오라클 SQL 디벨로퍼 권한 변경 (cmd창 이용)
+  1) 락 해제하기
+  - sqlplus / as sysdba
+  - alter user 유저이름 account unlock;
+
+  2) 비밀번호 변경
+  - sqlplus / as sysdba
+  - alter user 유저이름 identified by 암호;
+
+
+3. 용어
+- CREATE : 테이블(스키마) 생성
+- DROP : 테이블(스키마) 삭제
+- INSERT : 데이터 생성
+- DELETE : 데이터 삭제
+
+
+4. 쿼리 한꺼번에 실행하기
+- 실행할 쿼리 블록설정하고 Ctrl+Enter
+
+
+5. 데이터베이스의 기본연산 CRUD
+Create : 생성
+Reteive : 검색
+Update : 수정
+Delete : 삭제
+
+
+6. SQL 구문은 대소문자 구분을 안 한다!
