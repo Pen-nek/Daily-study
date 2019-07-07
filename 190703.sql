@@ -279,7 +279,8 @@ USING (department_id);
         RIGHT OUTER JOIN departments d
         ON (e.department_id = d.department_id);
         
-    --Outer Join에서 ON과 WHERE의 차이점?
+    -- Outer Join에서 ON과 WHERE의 차이점?
+    -- ON은 Join에만 사용됨 / WHERE는 어떤 명령어에도 사용 가능한 조건문
         
 SELECT e.last_name, d.department_name
 FROM employees e JOIN departments d
