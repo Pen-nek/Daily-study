@@ -1,8 +1,8 @@
--- ## ¾Æ³ë¸»¸®
+-- ## ì•„ë…¸ë§ë¦¬
 
 
--- ¾Æ³ë¸»¸® ÀÌÇØ¸¦ À§ÇÑ Ã¥ ½Ç½À
--- °èÀýÇÐ±â ¼ö°­ Å×ÀÌºí(Summer) ¸¸µé±â
+-- ì•„ë…¸ë§ë¦¬ ì´í•´ë¥¼ ìœ„í•œ ì±… ì‹¤ìŠµ
+-- ê³„ì ˆí•™ê¸° ìˆ˜ê°• í…Œì´ë¸”(Summer) ë§Œë“¤ê¸°
 CREATE TABLE Summer(
     sid NUMBER,
     class VARCHAR2(20),
@@ -10,59 +10,59 @@ CREATE TABLE Summer(
 );
 
 
--- Å×ÀÌºí µ¥ÀÌÅÍ »ðÀÔ
+-- í…Œì´ë¸” ë°ì´í„° ì‚½ìž…
 INSERT INTO Summer VALUES (100, 'FORTRAN', 20000);
 INSERT INTO Summer VALUES (150, 'PASCAL', 15000);
 INSERT INTO Summer VALUES (200, 'C', 10000);
 INSERT INTO Summer VALUES (250, 'FORTRAN', 20000);
 
 
--- Å×ÀÌºí È®ÀÎ
+-- í…Œì´ë¸” í™•ì¸
 SELECT *
 FROM Summer;
 
 
--- ÁúÀÇ 7-1 200¹ø ÇÐ»ýÀÇ °èÀýÇÐ±â ¼ö°­½ÅÃ»À» Ãë¼ÒÇÏ½Ã¿À
+-- ì§ˆì˜ 7-1 200ë²ˆ í•™ìƒì˜ ê³„ì ˆí•™ê¸° ìˆ˜ê°•ì‹ ì²­ì„ ì·¨ì†Œí•˜ì‹œì˜¤
 
---C°­ÁÂ ¼ö°­·á Á¶È¸
-SELECT price "C ¼ö°­·á"
+--Cê°•ì¢Œ ìˆ˜ê°•ë£Œ ì¡°íšŒ
+SELECT price "C ìˆ˜ê°•ë£Œ"
 FROM Summer
 WHERE class='C';
 
--- 200¹ø ÇÐ»ý ¼ö°­½ÅÃ» Ãë¼Ò
+-- 200ë²ˆ í•™ìƒ ìˆ˜ê°•ì‹ ì²­ ì·¨ì†Œ
 DELETE FROM Summer
 WHERE sid=200;
 
--- C°­ÁÂ ¼ö°­·á ÀçÁ¶È¸
-SELECT price "C ¼ö°­·á"
+-- Cê°•ì¢Œ ìˆ˜ê°•ë£Œ ìž¬ì¡°íšŒ
+SELECT price "C ìˆ˜ê°•ë£Œ"
 FROM Summer
 WHERE class='C';
 
 
--- ÁúÀÇ 7-2 °èÀýÇÐ±â¿¡ »õ·Î¿î ÀÚ¹Ù °­ÁÂ °³¼³
+-- ì§ˆì˜ 7-2 ê³„ì ˆí•™ê¸°ì— ìƒˆë¡œìš´ ìžë°” ê°•ì¢Œ ê°œì„¤
 
--- ÀÚ¹Ù °­ÁÂ »ðÀÔ
+-- ìžë°” ê°•ì¢Œ ì‚½ìž…
 INSERT INTO Summer VALUES (NULL, 'JAVA', 25000);
 
--- Summer Å×ÀÌºí Á¶È¸
+-- Summer í…Œì´ë¸” ì¡°íšŒ
 SELECT *
 FROM Summer;
 
--- NULL °ªÀÌ ÀÖ´Â °æ¿ì ÁÖÀÇÇÒ ÁúÀÇ : ¼ö°­ÇÐ»ýÀº ÃÑ 4¸íÀÌ¶óµµ Å×ÀÌºí ÀüÃ¼ ÅõÇÃ Ä«¿îÆ® ½Ã 5·Î ¶ä.
-SELECT COUNT(*) "¼ö°­ÀÎ¿ø"
+-- NULL ê°’ì´ ìžˆëŠ” ê²½ìš° ì£¼ì˜í•  ì§ˆì˜ : ìˆ˜ê°•í•™ìƒì€ ì´ 4ëª…ì´ë¼ë„ í…Œì´ë¸” ì „ì²´ íˆ¬í”Œ ì¹´ìš´íŠ¸ ì‹œ 5ë¡œ ëœ¸.
+SELECT COUNT(*) "ìˆ˜ê°•ì¸ì›"
 FROM Summer;
 
-SELECT COUNT(sid) "¼ö°­ÀÎ¿ø"
+SELECT COUNT(sid) "ìˆ˜ê°•ì¸ì›"
 FROM Summer;
 
-SELECT COUNT(*) "¼ö°­ÀÎ¿ø"
+SELECT COUNT(*) "ìˆ˜ê°•ì¸ì›"
 FROM Summer
 WHERE sid IS NOT NULL;
 
 
--- ÁúÀÇ 7-3 FORTRAN °­ÁÂÀÇ ¼ö°­·á¸¦ 20,000¿ø¿¡¼­ 15,000¿øÀ¸·Î ¼öÁ¤ÇÏ½Ã¿À
+-- ì§ˆì˜ 7-3 FORTRAN ê°•ì¢Œì˜ ìˆ˜ê°•ë£Œë¥¼ 20,000ì›ì—ì„œ 15,000ì›ìœ¼ë¡œ ìˆ˜ì •í•˜ì‹œì˜¤
 
--- FORTRAN °­ÁÂ ¼ö°­·á ¼öÁ¤
+-- FORTRAN ê°•ì¢Œ ìˆ˜ê°•ë£Œ ìˆ˜ì •
 UPDATE Summer
 SET price=15000
 WHERE class='FORTRAN';
@@ -70,24 +70,24 @@ WHERE class='FORTRAN';
 SELECT *
 FROM Summer;
 
-SELECT DISTINCT price "FORTRAN ¼ö°­·á"
+SELECT DISTINCT price "FORTRAN ìˆ˜ê°•ë£Œ"
 FROM Summer
 WHERE class='FORTRAN';
 
--- ´ÙÀ½ ½Ç½ÀÀ» À§ÇØ ¼ö°­·á º¹±¸
+-- ë‹¤ìŒ ì‹¤ìŠµì„ ìœ„í•´ ìˆ˜ê°•ë£Œ ë³µêµ¬
 UPDATE Summer
 SET price=20000
 WHERE class='FORTRAN';
 
--- ´ÙÀ½ ½Ç½ÀÀ» À§ÇØ sid°¡ NULLÀÎ ÅõÇÃ »èÁ¦
+-- ë‹¤ìŒ ì‹¤ìŠµì„ ìœ„í•´ sidê°€ NULLì¸ íˆ¬í”Œ ì‚­ì œ
 DELETE FROM Summer
 WHERE sid IS NULL;
 
 
 
--- ¼öÁ¤µÈ °èÀýÇÐ±â ¼ö°­ Å×ÀÌºí(Summer) ¸¸µé±â
+-- ìˆ˜ì •ëœ ê³„ì ˆí•™ê¸° ìˆ˜ê°• í…Œì´ë¸”(Summer) ë§Œë“¤ê¸°
 
--- SummerPrice Å×ÀÌºí »ý¼º
+-- SummerPrice í…Œì´ë¸” ìƒì„±
 CREATE TABLE SummerPrice(
     class VARCHAR2(20),
     price NUMBER
@@ -101,7 +101,7 @@ SELECT *
 FROM SummerPrice;
 
 
--- SummerEnroll Å×ÀÌºí »ý¼º
+-- SummerEnroll í…Œì´ë¸” ìƒì„±
 CREATE TABLE SummerEnroll(
     sid NUMBER,
     class VARCHAR2(20)
@@ -116,21 +116,22 @@ SELECT *
 FROM SummerEnroll;
 
 
--- °èÀýÇÐ±â¸¦ µè´Â ÇÐ»ýÀÇ ÇÐ¹ø°ú ¼ö°­ÇÏ´Â °ú¸ñÀº?
+-- ê³„ì ˆí•™ê¸°ë¥¼ ë“£ëŠ” í•™ìƒì˜ í•™ë²ˆê³¼ ìˆ˜ê°•í•˜ëŠ” ê³¼ëª©ì€?
 SELECT sid, class
 FROM SummerEnroll;
 
 
--- C °­ÁÂÀÇ ¼ö°­·á´Â?
+-- C ê°•ì¢Œì˜ ìˆ˜ê°•ë£ŒëŠ”?
 SELECT class, price
 FROM SummerPrice
 WHERE class='C';
 
 
--- ¼ö°­·á°¡ °¡Àå ºñ½Ñ °ú¸ñÀº?
+-- ìˆ˜ê°•ë£Œê°€ ê°€ìž¥ ë¹„ì‹¼ ê³¼ëª©ì€?
 SELECT class, price
 FROM SummerPrice
 WHERE price=(SELECT MAX(price)
              FROM SummerPrice);
              
              
+-- ì •ê·œí™” ê³µë¶€!!
