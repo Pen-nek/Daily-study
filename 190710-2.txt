@@ -1,0 +1,19 @@
+### 자바 다운로드
+
+http://java.sun.com - Java SE (Standard edition) - Java SE 12.0.1 JDK 다운로드 - 라이센스 동의 - 	jdk-12.0.1_windows-x64_bin.exe - 다운받는 동안 뒤로 가기 - Java SE 8u211 / Java SE 8u212 JRE 다운로드 - 8u211 - 라이센스 동의 - jre-8u211-windows-x64.exe
+
+
+
+### 시스템 설정
+
+내PC - 오른클릭 - 속성 - 고급 시스템 설정 - 고급 - 환경변수 - 시스템 변수 밑 새로 만들기 - 변수 이름 JAVA_HOME - 변수 값에 JAVA 설치된 폴더주소 넣기(C:\Program Files\Java\jdk-12.0.1) - 확인 - Path 클릭 - 편집 - 원래 있던 JAVA 삭제 - 새로 만들기 - JAVA 설치된 폴더주소 넣고 하위폴더 bin 추가 (C:\Program Files\Java\jdk-12.0.1\bin) - 확인 - 확인 - 확인
+
+
+
+### 이클립스 다운로드
+https://www.eclipse.org/ - 다운로드 - Download Packages - Eclipse IDE for Enterprise Java Developers 윈도우즈 64bit - >> Select Another Mirror - Korea, Republic Of - Daum Kakao Corp.
+
+
+
+Tip
+시스템변수에서 변수를 바꾸면 모든 사용자에게 적용됨
