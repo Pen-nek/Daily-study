@@ -1,0 +1,77 @@
+# 190722 java
+
+## 배열
+
+
+### 배열의 정의
+1. 첫번째 방법
+> 배열 생성과 동시에 원소 집어넣기
+
+	String[] classGroup = { "장화", "홍련", "원숭이", "호랑이" };
+
+2. 두번째 방법
+> 배열 생성 시 길이를 지정하고, 원소는 따로 집어넣기
+
+	String[] classGroup = new String[4];
+		classGroup[0] = "장화";
+		classGroup[1] = "홍련";
+		classGroup[2] = "원숭이";
+		classGroup[3] = "호랑이";
+		System.out.println(classGroup.length);
+
+
+
+### 인덱스
+> classGroup 배열에서 0번째 요소를 출력하는 코드
+
+	System.out.println(classGroup[0]);
+
+- index = 색인
+- 여기서 0이 인덱스임
+
+
+
+### 원소
+> 원소 = element
+
+	{ "장화", "홍련", "원숭이", "호랑이" };
+
+- 장화, 홍련, 원숭이, 호랑이는 각각 원소임
+
+
+
+### 배열의 크기(=길이) 알아내기
+> 아래 코드는 배열이 담을 수 있는 데이터의 수를 출력함
+
+	System.out.println(classGroup.length);	
+
+
+
+### for-each문
+> for문과 배열의 결합을 간단하게 함
+
+	String[] members = { "김일일", "김이이", "김삼삼" };
+	for (String i : members)
+		System.out.println(i + "이(가) 상담을 받았습니다.");
+
+- 위의 코드는 아래 코드와 같음.
+
+	String[] members = { "김일일", "김이이", "김삼삼" };
+	for (int i = 0; i < members.length; i++) {
+	System.out.println(i + "이(가) 상담을 받았습니다.");
+	}
+
+
+
+## 메소드
+> 이미 정의한 로직을 재활용함
+
+### 메인 메소드
+- 실행해서 결과값을 얻고 싶은 코드는 반드시 여기에 위치해야 함
+
+### 입력값
+- 메소드를 호출할 때 인자로 적어준 값은 매개변수에 담기고 메소드에 사용됨
+
+### 출력값
+- return : 리턴을 만나면 자바는 실행을 관두고 결과값을 반환함
+- 리턴값의 데이터 타입은 메소드 이름 앞에 붙음
