@@ -1,0 +1,12 @@
+# 190730
+
+## 오늘 한 일
+- JDK 8버전 다운
+- JDBC 다운
+
+- Swing으로 프로그래밍 하기 : 이클립스 패키지 오른클릭 - New - Others - 윈도우즈빌더 - 스윙디자이너 - JFrame
+
+- Swing : AWT를 개량한 것
+
+- border layout : 선을 중심으로 레이아웃 잡는 것
+- abstract layout : 기준 없이 레이아웃 잡는 것
