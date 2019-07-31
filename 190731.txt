@@ -1,0 +1,18 @@
+﻿# 190731
+
+## JSP란
+-  java + HTML
+- 웹 기반 응용프로그램
+
+## 이클립스 설정
+- JSP를 서버로 run할 때의 웹브라우저 실행창 변경
+
+	Window - Preferences - General - Web Browser 에서 internal/external 변경으로 외부 브라우저에서 확인 가능
+
+전역변수?
+서블릿?
+
+
+## CDN (Contents Delivery Network)
+- 네트워크에 이미 있는 자원(소스 등)을 가져와 쓰는 것
+- ex. CSS에서 구글 웹폰트 빌려오기
