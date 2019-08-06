@@ -1,0 +1,72 @@
+# 190801 JSP
+
+#### Tip
+- jsp에서 html 문법을 쓸 땐 '' 사용
+
+
+
+## SSL? 
+- https : s는 Secure. 서버-클라이언트 간 대화를 암호화해서 함
+
+#### 포트 번호
+- 통신에 반드시 필요한 물리적 구조
+- 기본적으로 80번 사용
+
+
+
+## 태그
+- input의 submit 타입 : name속성 넣을 필요없음!
+
+### form의 속성
+- action :  사용자로부터 입력된 내용을 처리할 프로그램의 URL을 지정
+- method : 사용자로부터 입력된 내용을 어떤 방식으로 서버에 넘길지를 결정 (post가 주소표시줄에 표시되지 않는 방식, get이 아닌 방식)
+
+### JSP 한글 인코딩
+
+	<% request.setCharacterEncoding("UTF-8"); %>	
+
+
+
+## Form
+
+### 입력받은 인자를 파라미터로
+- Form에서 입력된 값을 파라미터 name에 넘겨주고 변수 i에 저장
+
+String i = request.getParameter("name");
+
+
+
+### 내 외부 접속 가능하도록 방화벽 푸는 법
+
+- 인바운드 : 들어오는 신호
+- 아웃바운드 : 나가는 신호
+
+- 방화벽 푸는 법 : 제어판 - 방화벽 - 인바운드 규칙 - 새 규칙 - 포트 체크 - 특정 로컬 포트에 포트번호 입력 - 다음*3 - 규칙 이름 적기(ex. JSP(8080)) - 완료
+
+- 이클립스 설정 : Run - Run Configurations - Arguments - VM arguments 창에서 줄바꿈 
+
+
+
+## 쿠키(Cookie)
+
+- 클라이언트에 일시적으로 저장되는 내용
+- 모든 서버들이 접근할 수 있음
+- 이것을 이용한 해킹 가능! (중요 정보 저장X)
+
+
+
+> #### SQLite
+> - 요새 각광받고 있는 가벼운 DB
+
+
+
+### 
+C:\Users\USER> d:
+D:\>cd sqlite3
+dir
+D:\sqlite 3> sqlite3 mydb.db
+메모장 켜서 메모장에 sql문 적고 파일명 mydb.sql
+sqlite> .database 
+sqlite> .read mydb.sql
+sqlite> .table
+sqlite> select * from board;

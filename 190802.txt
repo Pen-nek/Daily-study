@@ -1,0 +1,23 @@
+﻿#190802 SQLite
+
+## 명령어
+### 원하는 파일로 이동
+> cd 이동할 파일 이름
+
+	cd sqlite3
+
+### 현재 디렉터리에 존재하는 파일 목록 확인
+
+	dir
+
+### SQLite의 DB 실행
+> sqlite 버전명 DB이름
+
+	sqlite3 mydb.db
+
+### 파일 읽어서 실행
+>.read 파일이름 확장명
+
+	.read mydb.sql
+
+### 
