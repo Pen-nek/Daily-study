@@ -1,0 +1,15 @@
+﻿#190807 JAVA
+
+## CRUD
+- Create
+- Read
+- Update
+- Delete
+
+### rs2xml.jar
+- JTable에 유용한 JAR 파일
+
+#### Tip
+- 그냥 홈페이지를 만드는 건 의미가 없음
+- 빅데이터, 러닝머신을 활용해야 함
+
