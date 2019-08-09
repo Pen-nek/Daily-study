@@ -1,0 +1,30 @@
+#190808 JSP
+
+## 코드 
+
+### 이클립스에서 웹페이지 실행이 외부 브라우저로 되게 하기
+
+	Window - Web browser - 원하는 브라우저 선택
+
+
+
+## bootstrap
+- 쉬운 개발을 위한 프론트엔드용 프레임워크
+- HTML, CSS를 포함
+
+
+
+## 오라클 DB developer
+
+### 시퀀스 만들기
+
+	CREATE SEQUENCE auto_increment START WITH 1 INCREMENT BY 1 MINVALUE 1 MAXVALUE 99999999;
+
+
+
+## 자바빈즈
+
+### DTO : Data Transfer Object
+
+### DAO : Data Access Object
+- Java와 JSP 파일을 접합 가능
