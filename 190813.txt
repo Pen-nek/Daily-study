@@ -1,0 +1,7 @@
+# 190813
+
+## 이후 공부 내용
+- jQuery 라이브러리
+
+## html id 값을 자바스크립트에서 사용하기
+- document.querySelector("#userid").value;
