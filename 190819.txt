@@ -1,0 +1,16 @@
+# 190819
+
+#### HTML / XML
+- ML은 Markup Language
+
+### JSON
+- 키, 밸류 쌍으로 데이터를 정의해주는 문법
+- XML을 대신함
+
+### 반응형 웹의 재료
+- HMTL + CSS
+- JQuery
+- JSON
+
+## AJAX
+- AJAX란 엔진
