@@ -1,0 +1,85 @@
+# 190905
+
+- 컴퓨터에 이클립스 여러개를 깔아도 됨. 워크스페이스를 따로 잡은 다른 버전 이클립스들을 깔자
+- 현재 photon버전까지 안정적임
+
+
+
+## Spring
+
+
+
+#### 용량을 위해 지워도 되는 파일
+
+- C://Windows.old 폴더
+- C://Temp 폴더 안의 파일
+
+
+
+### 오늘의 새로운 컴퓨터 환경 설정
+- 엄 교수님과 이 교수님 환경 설정이 충돌하기 때문
+
+1. 이클립스 포톤 설치
+2. 스프링 개발을 위한 STS 다운
+
+
+
+### Spring의 자바파일 실행 순서
+- web.xml(앱과 관련) -> root-context.xml -> servlet-context.xml -> HomeController.java -> home.jsp
+
+- pom.xml : 실행환경 관련
+
+
+
+## Spring 프레임웤 코딩
+- SpringMVC게시판제작.pdf 파일 참고
+
+### pom.xml 수정
+
+- <java-version>을 자바 버전에 맞게 수정
+	<java-version>1.8</java-version> // 1.8이라 1.8
+
+- 스프링 프레임웍 버전 설정
+> 현재 5.1.4까지가 안정성이 좋음
+
+	<org.springframework-version>5.1.4.RELEASE</org.springframework-version>
+
+
+
+### 이클립스에 서버 추가
+- 뭔지 알지?
+
+
+
+### 작업 환경설정
+1. 프로젝트 오른클릭 - 프로퍼티스 - 왼쪽 목록 Project Facets - Java 버전 1.8로 변경
+2. 오른쪽 Runtimes 탭 - 서버 선택 - Apply
+3. 왼쪽 목록 Deployment Assembly - Maven dependencies 에 Deploy Path가 WEB-INF/lib 물려있나 확인
+4. 다 됐으면 Apply - Apply and Close
+5. 서버 설정 창에서 HTTP/1.1 포트번호를 9090으로 변경
+
+
+
+### MySQL 워크벤치
+- board 계정 생성 (DBA 권한)
+- board 테이블 생성
+
+	use board;	-- board라는 데이터베이스 사용 
+	create table tbl_board(
+	bno INT NOT NULL AUTO_INCREMENT,
+	title VARCHAR(200) NOT NULL,
+	content VARCHAR(2000) NOT NULL,
+	writer VARCHAR(200) NOT NULL,
+	regdate TIMESTAMP NOT NULL default NOW(),
+	viewcnt INT DEFAULT 0,
+	PRIMARY KEY(bno));
+	desc tbl_board;	-- 테이블 구조 조회하는 명령문
+
+
+
+### Eclipse
+- DB 연결을 위한 라이브러리 추가
+  + spring-jdbc
+  + mysql-connector-java
+  + mybatis
+  + mybatis-spring
