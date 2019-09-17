@@ -1,0 +1,56 @@
+# 190917 안드로이드 스튜디오
+
+## 안드로이드 스튜디오 시작하기
+
+### 1. 안드로이드 스튜디오 설치
+- 설치까지는 Do not import setting 외에 특별할 것 없음
+
+### 2. 셋업 위저드
+- 그냥 Next 하다 테마 원하는 걸로 선택
+- Next - finish
+
+### 3. 프로젝트 시작
+- Start a new...
+- Empty Activity
+- D드라이브에 위치시켜 프로젝트 생성
+
+***
+#### 패키지 네임
+- 내가 개발한 파일과 다른 사람이 개발한 파일을 구분
+- 유일무이한 이름이어야 함(이메일 주소처럼)
+*** 
+
+### 4. 작업경로
+- 왼쪽 사이드바 위에서 환경 Android 선택
+  + app>java>첫번째 것>MainActivity 열기
+  + res>layout>activity_main.xml 열기
+왼쪽 사이드바에서 프로젝트>app>src>main>java>맨 아래의 파일
+
+### 5. 가상 디바이스 생성
+- 메뉴바 오른쪽 위 [AVD 매니저]
+- create...
+- 넥서스 5X
+- Pie 다운로드
+- Next - finish
+
+### 6. 생성한 가상 디바이스 실행
+- 목록에서 더블클릭
+- 또는 Actions의 삼각형 실행 버튼 클릭
+
+### 7. 어플 실행 방법
+- 메뉴 우상단에서 삼각형 실행 버튼
+- 메뉴에서 run - run app
+- 또는 shift + F10
+
+### UI 디자인
+- activity_main > Design 탭 (기본값)
+- 개체 선택 후 위에 뜨는 보조 메뉴에서 정렬 가능
+
+### 개체의 너비, 높이 조정 
+- 개체 선택 후 오른쪽 상세 메뉴의 layout_width를 match_parent로 변경, dp값을 원하는 크기로 조정
+- 또는 개체 모서리의 점을 누른 채 조정
+
+#### wrap_content와 match_parent
+- wrap_content : 내용물의 크기에 따라 크기가 바뀜
+- match_parent : 부모요소의 크기에 맞춤
+- match_constraint : 제약조건에 

@@ -1,0 +1,44 @@
+# 190911 simple MVC Program
+
+## 오류 해결
+
+### 톰캣 오류
+- server.xml 에서 다른 context를 주석처리 : 같은 톰캣에 프로젝트가 여러개 물려있을 경우, context들이 한꺼번에 돌아가서 그럴 수 있음
+
+### mySQL 드라이버 버전에 따른 드라이버명
+- 과거엔 com.mysql.jdbc.Driver를 사용했으나 지금은 cj를 붙여 쓴다!
+
+	static final String driver = "com.mysql.cj.jdbc.Driver";
+
+#### Tip
+- 유저에게서 입력받는 값 : Parameter
+- 소스 코드 내에서 적어주는 값 : Attribute
+- 서블릿 파일 = 서블릿 클래스로 만들어지는 하나의 인스턴스
+
+## (이클립스 사용) MVC 프로그램 제작 시 환경설정
+
+1. 프로젝트 생성
+
+2. server.xml에 컨텍스트 생성
+
+3. 프로젝트의 WebContent > WEB-INF에 web.xml 파일 생성
+  - 타 프로젝트에서 복붙해오고 쓸데 없는 내용 지우기
+
+4. 에러페이지 생성
+  > web.xml에 에러페이지 관련 내용 삽입
+	  <error-page>
+   	 <error-code>404</error-code>
+   	 <location>/error/404code.jsp</location>
+  	</error-page>
+
+5. 컨트롤러, 모델 패키지 생성
+ - 위치 : 프로젝트 > Java Resources > src 폴더
+
+6. 컨트롤러 클래스 생성
+ - 인터페이스, 서블릿 클래스 1개씩 생성
+ - 서블릿 클래스는 인터페이스를 임플리먼트
+
+7. 모델 클래스 생성
+ - 자바빈즈 클래스 생성
+
+
