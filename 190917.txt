@@ -53,4 +53,4 @@
 #### wrap_content와 match_parent
 - wrap_content : 내용물의 크기에 따라 크기가 바뀜
 - match_parent : 부모요소의 크기에 맞춤
-- match_constraint : 제약조건에 
+- match_constraint : 제약조건에 맞춤
