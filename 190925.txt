@@ -1,0 +1,4 @@
+# 190925
+
+#### 오라클과 MySQL의 가장 큰 차이점
+- MySQL에는 auto_increment 기능이 있다
