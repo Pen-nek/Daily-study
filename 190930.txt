@@ -1,0 +1,58 @@
+# 190930 안드로이드 스튜디오
+
+***
+#### 면접 팁
+- 게시판 기능을 잘 알아둘 것! 질문이 많이 들어옴.
+***
+
+## 지난 내용 정리
+
+### 자주 쓰는 레이아웃
+- Constraint Layout
+- Linear(vertical / horizontal) Layout
+
+### 자주 쓰는 뷰
+- TextView : setText(), getText() 사용
+- Button : 이벤트 사용
+
+### 디버깅
+1. 코드 왼쪽을 누르면 '브레이크 포인트' 생성
+  - 브레이킹 포인트는 빨간 원 형태
+2. Debug app (쉬프트+F9) : 디버그 상태로 앱 실행. 첫번째 브레이크 포인트에서 멈춤
+3. Debugger 창의 스텝오버 (F8) : 코드를 한 줄씩 건너가며 실행
+3-1. Resume Program(F9) : 코드를 쭉 실행하다 다음 브레이크 포인트에서 멈춤
+
+### 단축키
+- 자동 임포트 : Alt + Anter
+- 임플리먼트 : (필요한 클래스 클릭한 상태에서) 컨트롤 + O
+
+### 문법
+- R.id.btn1 : btn1이라는 id를 가진 요소를 찾기 위해서 쓰는 문법
+- 토스트 메시지 : 잠깐 노출됐다가 사라지는 메시지
+
+### 자바의 개념
+- 함수 안에는 또다른 함수를 정의할 수 없음
+
+### 추가 화면 만들기
+1. 왼쪽 메뉴 res > layout에 오른클릭 > New > 레이아웃 리소스 파일
+2. 왼쪽 메뉴 java > MainActivity가 위치한 패키지 오른클릭 > New > 자바 클래스
+
+
+
+
+
+## 잘못된 코드
+
+### 빈 문자열 체크
+- 자바는 빈 문자열 체크가 아래처럼은 안 됨.
+
+	String Id = txtId.getText().toString();
+                String Pw = txtPw.getText().toString();
+
+                boolean checkNull = (Id != "") && (Pw != "");
+
+- 아래와 같은 방식을 사용해야 함
+
+	String adminId = "admin";
+                String gotId = txtId.getText().toString();
+	gotId.equals(adminId)
