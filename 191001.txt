@@ -1,0 +1,30 @@
+# 191001 안드로이드 스튜디오
+
+## 실습
+
+0. 프로젝트 PhoneSamples 생성
+
+1. 액티비티의 기본 소양 : AppCompatActivity를 상속받을 것
+
+	public class MainActivity extends AppCompatActivity {
+	}
+
+	
+2. 앱이 실행됐을 때 가장 먼저 띄워지는 부분
+- AndroidManifest.xml 파일에서 intent-filter의 내용
+
+	<activity android:name=".SubActivity"
+            android:label="Sub"
+            android:theme="@style/AppTheme">
+            <intent-filter>     // app이 실행됐을 때 가장 먼저 띄우는 부분
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+## 문법
+> 객체.객체가 가진 함수/변수
+
+	
