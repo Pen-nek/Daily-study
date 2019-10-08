@@ -1,0 +1,70 @@
+# 191008 안드로이드 
+
+## 조언 
+- 개발자라면 웹기술을 갖춰야 함
+- 웹기술 : HTML + CSS + JS + JSP
+
+## 서버
+
+### 동기와 비동기
+- 동기 : 서버와 클라이언트가 계속 연결을 유지하는 것
+- 비동기 : 서버와 클라이언트가 필요할 때만 연결되고 연결을 끊는 것
+- 일반적인 웹 인터넷 통신은 **비동기** 방식임
+- html파일을 요청해서 다운받은 후에는 동기가 유지되지 않음
+
+### 서버의 주소
+- IP : 서버의 주소
+- 도메인 : IP와 1:1로 대응하는 이름. 기억과 접근을 **쉽게** 하려고 존재
+- localhost : 자기자신을 지칭할 때 쓰는 주소. 127.0.0.1 임
+
+### 호스팅
+- 주요 호스팅 회사 : 가비아, 카페24, AWS(Amazon Web Server, 미국회사)
+
+### get과 post
+- get : 주소표시줄에 변수와 파라미터가 보임. ex.게시판 글읽기/메뉴 이동
+- post : 주소표시줄에 변수와 파라미터가 안 보임. ex.로그인
+
+
+
+***
+
+## 자바 개념
+- 객체가 없으면 변수 사용이 안 됨
+
+class person {
+String name;
+int age;
+}
+
+class school {
+person.age = 10;	// 오류 발생
+}
+
+- 이 때 static 변수 사용하면 가능
+- 바로 쓸 수 있게끔 메모리에 올려줌
+
+class person {
+static String name;
+static int age;
+}
+
+class school {
+person.age = 10;	// 정상 실행
+}
+
+
+
+## 안드로이드 스튜디오 JSON 적용순서
+
+1. Gradle Scripts > build.gradle(Module: app) > dependencies에 volley와 gson 추가
+
+2. 안드로이드매니페스트.xml 수정
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+3. 동일한 파일의 application 수정
+
+	android:usesCleartextTraffic="true"
+
+4. 레이아웃 
+- main.activity
